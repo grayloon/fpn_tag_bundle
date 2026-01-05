@@ -30,7 +30,7 @@ class TagManager extends BaseTagManager
     /**
      * @see DoctrineExtensions\Taggable\TagManager::createTag()
      */
-    protected function createTag($name)
+    protected function createTag($name): Tag
     {
         $tag = parent::createTag($name);
         $tag->setSlug($this->slugifier->slugify($name));

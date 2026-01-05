@@ -12,7 +12,7 @@ namespace FPN\TagBundle\Util;
 
 class Slugifier implements SlugifierInterface
 {
-    public function slugify($name)
+    public function slugify($name): string
     {
         $slug = mb_convert_case($name, MB_CASE_LOWER, mb_detect_encoding($name));
         $slug = str_replace(' ', '-', $slug);

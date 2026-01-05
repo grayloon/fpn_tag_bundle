@@ -16,7 +16,7 @@ class Tag extends BaseTag
 {
     protected $slug;
 
-    public function __toString() {
+    public function __toString(): string {
         return $this->getName();
     }
 
@@ -25,7 +25,7 @@ class Tag extends BaseTag
      * 
      * @return string
      */
-    public function getSlug()
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -35,7 +35,7 @@ class Tag extends BaseTag
      * 
      * @return string
      */
-    public function setSlug($slug)
+    public function setSlug($slug): void
     {
         $this->slug = $slug;
     }

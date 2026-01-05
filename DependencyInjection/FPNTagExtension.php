@@ -23,7 +23,7 @@ class FPNTagExtension extends Extension
      * @param array             $configs     An array of configuration settings
      * @param ContainerBuilder  $container   A ContainerBuilder instance
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
